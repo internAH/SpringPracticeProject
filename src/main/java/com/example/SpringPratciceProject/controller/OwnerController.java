@@ -15,6 +15,8 @@ public class OwnerController {
 
     @PostMapping("/add-owner")
     public Owner saveOwner(@RequestBody Owner owner){
+        System.out.println("In saveOwner method");
+        System.out.println("print for reference");
         return ownerService.saveOwner(owner);
     }
 
