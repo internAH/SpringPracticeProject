@@ -15,6 +15,9 @@ public class BlogController {
 
     @PostMapping("/add-blog")
     public Blog saveBlog(@RequestBody Blog blog){
+        System.out.println("In " +
+                "blogOwner method");
+        System.out.println("print for reference");
         return blogService.saveBlog(blog);
     }
 
